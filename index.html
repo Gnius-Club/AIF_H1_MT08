@@ -1,24 +1,293 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Playbook — 1º Preparatoria — Misión M08 - Combinando técnicas y Frameworks de Prompts</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
+<header>
+<h1><span class="book-icon">📋</span> <strong>Playbook Misión M08: Combinando técnicas y Frameworks de Prompts</strong></h1>
+<div class="header-widgets">
+<div class="timer-container">
+<span id="timer">⏱️ 00:00</span>
+<button id="startStop">Start</button>
+<button id="reset">Reset</button>
+</div>
+<div class="theme-toggle">
+<i class="fas fa-sun"></i>
+<label class="switch">
+<input type="checkbox" id="theme-toggle-input">
+<span class="slider round"></span>
+</label>
+<i class="fas fa-moon"></i>
+</div>
+</div>
+</header>
+<div class="main-container">
+<aside class="activity-list">
+<h2>Actividades</h2>
+<ul>
+<li><a href="#activity-0">De un Vistazo</a></li>
+<li><a href="#activity-1">Saludo Interactivo con IA</a></li>
+<li><a href="#activity-2">“I Can” Statement + Desafío</a></li>
+<li><a href="#activity-3">AI GYM</a></li>
+<li><a href="#activity-4">Brain Spark</a></li>
+<li><a href="#activity-5">GNIUS STORM</a></li>
+</ul>
+<div class="sidebar-info">
+<p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+<p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+</div>
+</aside>
+<main class="content">
+<div class="progress-bar">
+<div class="progress"></div>
+</div>
+<button id="toggle-dialogues">Mostrar todos los diálogos</button>
+<!-- 0) De un Vistazo -->
+<section class="activity-card" id="activity-0">
+<h2 class="activity-title">📝 De un Vistazo: Misión M08 - Combinando técnicas y Frameworks de Prompts</h2>
+<p class="activity-purpose">Resumen de objetivos, secuencia y entregables de la sesión.</p>
+<div class="overview-table-container">
+<table>
+<thead>
+<tr>
+<th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+<th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<h3>Objetivos e “I Can”</h3>
+<ul>
+<li>Puedo aplicar frameworks de prompting (AIDA, STAR) para estructurar mis interacciones con IA.</li>
+<li>Puedo generar outputs de IA específicos y accionables (anuncios, resúmenes) para escenarios profesionales.</li>
+</ul>
+<h3>Secuencia y tiempos</h3>
+<ol>
+<li>Saludo Interactivo con IA — 3 min</li>
+<li>“I Can” + Desafío — 5–7 min</li>
+<li>AI GYM — 10–12 min</li>
+<li>Brain Spark — 17–20 min</li>
+<li>GNIUS STORM — 5 min</li>
+</ol>
+<h3>Entregable del Micro-Proyecto</h3>
+<ul>
+<li>Un artefacto de texto (anuncio, preparación para entrevista, resumen accionable, etc.) generado por Claude, aplicando un framework de prompting específico (AIDA o STAR).</li>
+</ul>
+<h3>Criterios de calidad</h3>
+<ul>
+<li>Aplicación correcta del framework de prompting (AIDA o STAR) seleccionado.</li>
+<li>Claridad y concisión del prompt formulado.</li>
+<li>Relevancia y utilidad del output generado por la IA para el escenario profesional dado.</li>
+<li>Identificación de los elementos clave del framework en el output final.</li>
+</ul>
+</td>
+<td>
+<h3>Materiales y preparación</h3>
+<ul>
+<li>Proyector e internet</li>
+<li>Acceso a LLM (Claude) y herramientas (Otter.ai)</li>
+<li>Editor de texto (ej. Google Docs, Word)</li>
+</ul>
+<h3>Preparación previa para ESTA Sesión:</h3>
+<ol>
+<li>Verificar acceso y funcionalidad de Claude y Otter.ai.</li>
+<li>Familiarizarse con los frameworks AIDA y STAR y sus aplicaciones.</li>
+<li>Tener preparado un ejemplo mínimo de prompt y output utilizando uno de los frameworks para la demostración.</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- 1) Saludo Interactivo con IA -->
+<section class="activity-card" id="activity-1">
+<h2 class="activity-title">Saludo Interactivo con IA</h2>
+<p class="activity-purpose">Establecer tono profesional, conectar con la importancia de la interacción estructurada con IA y activar a Xolo.</p>
+<div class="steps">
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 1 — Bienvenida y foco</h3>
+<p class="step-instructions">Proyectar Diapositiva 2. Enuncia el foco conceptual de la sesión: la importancia de una comunicación estructurada con la IA para obtener resultados precisos y profesionales.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Equipo, hoy abordamos un aspecto crítico de la interacción con la Inteligencia Artificial: la estructura. No basta con pedir; es necesario saber cómo pedir para obtener resultados óptimos. Aprenderemos a usar frameworks de prompting que transformarán sus interacciones con Claude, Otter.ai y cualquier otra IA, en comunicaciones estratégicas y efectivas. Esto es fundamental para cualquier rol profesional donde la precisión y la eficiencia son clave.</p>
+</div>
+</div>
+</article>
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 2 — Activación con Xolo</h3>
+<p class="step-instructions">Cada estudiante abre su chat con Xolo y envía un saludo con su perfil de aprendizaje e intereses, haciendo referencia a la misión actual.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Activen a Xolo con su perfil e intereses. Envíen un mensaje como: "Hola Xolo, soy [Nombre], perfil [X]; me interesa [Y]. Estoy en la Misión M08 - Combinando técnicas y Frameworks de Prompts." Confirmen que Xolo ha recibido el mensaje y está listo para asistirles con los criterios de esta sesión, enfocados en la estructuración de prompts.</p>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- 2) “I Can” + Desafío -->
+<section class="activity-card" id="activity-2">
+<h2 class="activity-title">“I Can Statement” + Desafío</h2>
+<p class="activity-purpose">Explicitar las metas de aprendizaje y presentar el reto que guiará la producción del día.</p>
+<div class="steps">
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 1 — Presentación del reto</h3>
+<p class="step-instructions">Proyectar Diapositiva 3. Define el reto: utilizar frameworks de prompting para obtener outputs de IA específicos y accionables.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">El reto de hoy es transformar una necesidad de comunicación en un prompt estructurado que una IA pueda procesar eficientemente. Deberán seleccionar un framework de prompting, aplicarlo a un escenario real y generar un output que cumpla con los criterios de ese framework. La evaluación se centrará en la aplicación metodológica y la calidad del resultado obtenido por la IA.</p>
+</div>
+</div>
+</article>
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 2 — Afirmación “I Can”</h3>
+<p class="step-instructions">Proyectar Diapositiva 4. Cada estudiante redacta su propio “I Can” statement alineado con el micro-proyecto.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Ahora, formulen su propio "I Can Statement" para esta misión. Debe ser una frase concreta que capture lo que podrán hacer al finalizar. Por ejemplo: "Puedo estructurar prompts complejos utilizando frameworks (AIDA, STAR) para obtener resultados específicos de una IA." Tienen un minuto para redactarlo.</p>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- 3) AI GYM -->
+<section class="activity-card" id="activity-3">
+<h2 class="activity-title">AI GYM</h2>
+<p class="activity-purpose">Formalizar la aplicación de frameworks de prompting y sus criterios de calidad.</p>
+<div class="steps">
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 1 — Marco del día: Frameworks de Prompting</h3>
+<p class="step-instructions">Proyectar Diapositiva 5. Introduce los frameworks AIDA y STAR como herramientas para estructurar prompts.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Hoy nos enfocaremos en los frameworks de prompting AIDA (Atención, Interés, Deseo, Acción) y STAR (Situación, Tarea, Acción, Resultado). Estos marcos agregan valor al proporcionar una estructura lógica y completa a sus peticiones, lo que se traduce en respuestas más precisas y útiles de la IA. Eviten prompts vagos o incompletos. Un error común es no definir el contexto o el objetivo final. Usen los componentes de estos frameworks para validar que su prompt es robusto.</p>
+</div>
+</div>
+</article>
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 2 — Mini-demostración: Aplicando un Framework</h3>
+<p class="step-instructions">Proyectar Diapositiva 6. Demuestra en vivo cómo aplicar un framework (ej. AIDA) a un escenario simple en Claude, usando como base una transcripción de Otter.ai.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Observen cómo podemos tomar una transcripción de una reunión de Otter.ai y usar Claude para generar un resumen accionable. Si usamos el framework STAR, mi prompt podría ser: 'Situación: Transcripción de reunión sobre Proyecto X. Tarea: Resumir los puntos clave. Acción: Identificar decisiones tomadas y tareas asignadas. Resultado: Lista de acciones con responsables y fechas.' Verifica que cada componente del framework esté claramente definido en el prompt y que el output de Claude lo refleje.</p>
+</div>
+</div>
+</article>
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 3 — Check rápido</h3>
+<p class="step-instructions">Proyectar Diapositiva 7. Verifica la comprensión con dos preguntas breves sobre los frameworks.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Pregunta 1: ¿Cuál es el propósito principal de usar un framework de prompting? Pregunta 2: Nombra al menos dos componentes del framework AIDA o STAR.</p>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- 4) Brain Spark -->
+<section class="activity-card" id="activity-4">
+<h2 class="activity-title">Brain Spark</h2>
+<p class="activity-purpose">Producir el entregable tangible del Micro-Proyecto aplicando los frameworks de prompting.</p>
+<div class="steps">
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 1 — Producción guiada</h3>
+<p class="step-instructions">Proyectar Diapositiva 8. Indica la producción: seleccionar un framework (AIDA/STAR), un escenario (anuncio, entrevista, resumen), y generar el prompt y output en Claude. Tiempo de trabajo autónomo.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">N/A</p>
+</div>
+</div>
+</article>
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 2 — Iteración y mejora</h3>
+<p class="step-instructions">Proyectar Diapositiva 9. Indica una iteración específica: refinar el prompt para asegurar que todos los componentes del framework elegido estén optimizados y el output sea lo más preciso posible.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Antes de cerrar: valida que tu prompt incluya todos los elementos del framework seleccionado y que el output de Claude sea directamente utilizable para tu escenario. Si no se cumple, ajusta y vuelve a probar tu prompt, enfocándote en la claridad y la especificidad de cada componente.</p>
+</div>
+</div>
+</article>
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 3 — Evidencia de resultado</h3>
+<p class="step-instructions">Proyectar Diapositiva 10. Solicita el comprobante del trabajo: captura del prompt en Claude y del output generado.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Sube la evidencia de tu prompt y el output de Claude al canal indicado. Nombra tu archivo: [M08]_[TuNombre]_[Framework]. Asegúrate de que la captura muestre claramente el prompt estructurado y el resultado de la IA.</p>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- 5) GNIUS STORM -->
+<section class="activity-card" id="activity-5">
+<h2 class="activity-title">GNIUS STORM</h2>
+<p class="activity-purpose">Exhibición breve de resultados, síntesis de aprendizajes y conexión profesional.</p>
+<div class="steps">
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 1 — Showcase relámpago</h3>
+<p class="step-instructions">2–3 estudiantes muestran su prompt estructurado y el output de Claude (30–45 s c/u), enfocándose en la aplicación del framework.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Describan su escenario, el framework que eligieron, cómo estructuraron su prompt y el resultado obtenido en 30 segundos. Enfóquense en cómo el framework mejoró la calidad del output.</p>
+</div>
+</div>
+</article>
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 2 — Cierre ejecutivo</h3>
+<p class="step-instructions">Proyectar Diapositiva 11. Redacta una síntesis con: (a) 1 aprendizaje clave, (b) 1 criterio de calidad que marcó la diferencia, (c) siguiente paso aplicable fuera del aula.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Síntesis de la misión: El aprendizaje clave de hoy es que la calidad de la interacción con la IA depende directamente de la estructura de nuestra comunicación. El criterio que marcó la diferencia fue la adherencia rigurosa a los componentes del framework elegido, lo que llevó a outputs precisos y accionables. El siguiente paso aplicable fuera del aula es que comiencen a aplicar estos frameworks en todas sus comunicaciones, no solo con IAs, sino también en correos electrónicos, presentaciones o solicitudes profesionales, para lograr mayor claridad y efectividad.</p>
+</div>
+</div>
+</article>
+</div>
+</section>
+</main>
+</div>
+<script src="script.js"></script>
 </body>
-
 </html>
